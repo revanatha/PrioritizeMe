@@ -1,32 +1,32 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
-string kegiatan(string tugas) {
-    string nama_tugas;
-    int tanggal, kesulitan, kepentingan, dampak;
-    string selesai;
-    
-    do {
-        cin >> nama_tugas;
-        cout << "Apakah sudah semua? "<< endl;
-        
-        cin >> selesai;
-    }  while (selesai == "belum");
+//======================================================
+// PrioritizMe
+// Program ini membantu kamu menetukan urutan prioritas.
+// Empat kriteria utama:
+// 1. Deadline
+// 2. Tingkat kesulitan
+// 3. Tingkat kepentingan
+// 4. Dampak terhadap nilai atau prestasi
+// Program menghitung skor sederhana dari semua kriteria.
+// ======================================================
 
-
-    return nama_tugas;
-}
-
-int main() {
+// Struktur untuk menyimpan data satu tugas 
+struck Task {
     string judul;
-    cout << "Masukkan Judul Tugas : ";
-    cin >> judul;
-
-    cout << "Daftar Tugas : " << endl;
-    cout << kegiatan(judul) << endl;
-
-
-    return 0;
+    int deadline;          // Semakin kecil. semakin dekat deadline
+    int kesulitan;         // Nilai 1 sampai 5
+    int kepentingan;       // Nilai 1 sampai 5
+    int dampakNilai;       // Nilai 1 sampai 5
+    int skor;              // Skor prioritas yang dihitung 
+};
+// Fungsi untuk menghitung skor prioritas
+int hitungSkor(Task t){
+    // Semakin dekat deadline. Semakin tinggi prioritas.
+    // Rumus sederhana: skor = (6 - deadline) + kesulitan + kepentingan + dampakNilai
+    int skor = (6 - t.deadline) + t.kesulitan + t.kepentingan + t.dampakNilai;
+    return skor;
 }
 
-// test aja bro :)
