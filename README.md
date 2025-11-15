@@ -13,14 +13,19 @@ PrioritizeMe adalah aplikasi konsol yang membantu kamu menentukan urutan priorit
 
 ## Cara kerja
 • Kamu memasukkan tugas dan nilai untuk setiap kriteria.
+
 • Aplikasi menghitung skor sederhana.
+
 • Aplikasi menampilkan urutan prioritas.
 
 ## Cara menjalankan
 • Buka terminal.
+
 • Masuk ke folder proyek.
+
 • Jalankan file utama.
 
 ## Tujuan proyek
 • Membantu kamu mengatur tugas dengan lebih terarah.
+
 • Membantu kamu fokus pada kegiatan yang penting.
