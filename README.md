@@ -4,8 +4,11 @@ PrioritizeMe adalah aplikasi konsol yang membantu kamu menentukan urutan priorit
 
 ## Fitur utama
 • Deadline tugas. Aplikasi membantu kamu menilai tugas berdasarkan batas waktu.
+
 • Tingkat kesulitan. Kamu bisa memberi nilai kesulitan agar tugas yang lebih berat mendapat perhatian lebih.
+
 • Tingkat kepentingan. Kamu bisa menandai kegiatan yang penting.
+
 • Dampak terhadap nilai atau prestasi. Kamu bisa menilai seberapa besar pengaruh tugas terhadap performa akademik.
 
 ## Cara kerja
