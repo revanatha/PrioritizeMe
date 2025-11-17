@@ -15,8 +15,16 @@ using namespace std;
 
 // Fungsi untuk menghitung skor prioritas
 int hitungSkor (int deadline, int kesulitan, int kepentingan, int dampak){
-    return (6-deadline) + kesulitan + kepentingan + dampaak;
+    return (6-deadline) + kesulitan + kepentingan + dampak;
 }
+// Fungsi input tugas
+void inputTugas(string namaTugas[], int deadline[], int kesulitan[], int kepentingan[], int dampak[], int skor[], int jumlahTugas){
+    for (int i = 0; i < jumlahTugas; i++){
+        cout << "\nMasukan nama tugas ke-" << i+1 << ":  ";
+        getline(cin, namaTugas[i]) ;
 
+        cout << "Masukkan deadline (1-5, 1 = paling dekat): ";
+        cin >> deadline[i];
 
-
+    }
+}
