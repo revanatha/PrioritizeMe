@@ -26,6 +26,18 @@ void inputTugas(string namaTugas[], int deadline[], int kesulitan[], int kepenti
         cout << "Masukkan deadline (1-5, 1 = paling dekat): ";
         cin >> deadline[i];
 
+        cout << "Masukkan tingkat kesulitan (1-5): ";
+        cin >> kesulitan[i];                                                
+
+        cout << "Masukkan tingkat kepentingan (1-5): ";
+        cin >> kepentingan[i];                                              
+
+        cout << "Masukkan pengaruh terhadap nilai/prestasi (1-5): ";        
+        cin >> dampak[i];
+
+        cin.ignore();    //digunakan untuk menghapus newline sebelum input nama berikutnya                                            
+
+        skor[i] = hitungSkor(deadline[i], kesulitan[i], kepentingan[i], dampak[i]);
     }
 }
 
@@ -40,5 +52,6 @@ void inputTugas(string namaTugas[], int deadline[], int kesulitan[], int kepenti
     }
    }
 }
+
 
 
