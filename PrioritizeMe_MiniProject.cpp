@@ -13,21 +13,10 @@ using namespace std;
 // Program menghitung skor sederhana dari semua kriteria.
 // ======================================================
 
-// Struktur untuk menyimpan data satu tugas 
-struck Task {
-    string judul;
-    int deadline;          // Semakin kecil. semakin dekat deadline
-    int kesulitan;         // Nilai 1 sampai 5
-    int kepentingan;       // Nilai 1 sampai 5
-    int dampakNilai;       // Nilai 1 sampai 5
-    int skor;              // Skor prioritas yang dihitung 
-};
 // Fungsi untuk menghitung skor prioritas
-int hitungSkor(Task t){
-    // Semakin dekat deadline. Semakin tinggi prioritas.
-    // Rumus sederhana: skor = (6 - deadline) + kesulitan + kepentingan + dampakNilai
-    int skor = (6 - t.deadline) + t.kesulitan + t.kepentingan + t.dampakNilai;
-    return skor;
+int hitungSkor (int deadline, int kesulitan, int kepentingan, int dampak){
+    return (6-deadline) + kesulitan + kepentingan + dampaak;
 }
+
 
 
