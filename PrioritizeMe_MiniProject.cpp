@@ -30,3 +30,4 @@ int hitungSkor(Task t){
     return skor;
 }
 
+
