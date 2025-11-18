@@ -42,16 +42,17 @@ void inputTugas(string namaTugas[], int deadline[], int kesulitan[], int kepenti
 }
 
 
-// babble sort index berdasarkan skor
+// bubble sort index berdasarkan skor
     for(int i = 0; i < jumlahTotal - 1; i++){
         for(int j = 0; j < jumlahTotal - i - 1; j++){
-           if(skor[urutan[j]] < skor[urutan[j+1]]){       // membandngkan skor berdasarkan index urutan
+           if(skor[urutan[j]] < skor[urutan[j+1]]){       // membandingkan skor berdasarkan index urutan
            int kantong   = urutan[j];                     // memindahkan urutan[j] ke wadah sementara
            urutan[j]   = skorurutan[j+1];                 // memindahkan urutan[j+1] ke urutan[j]
            urutan[j+1] = kantong;                         // memindahkan isi dari wadah sementara ke urutan[j+1]
     }
    }
 }
+
 
 
 
