@@ -41,6 +41,11 @@ void inputTugas(string namaTugas[], int deadline[], int kesulitan[], int kepenti
     }
 }
 
+//Fungsi untuk mengurutkan urutan prioritas (menghasilkan indeks urutan)
+void urutkanPrioritas(int skor[], int jumlahTugas, int urutan[]) {
+    //isi urut awal = 0,1,2,...
+for (int i=0; i<jumlahTugas; i++) {
+    urutan[i] = i;
 
 // bubble sort indexs berdasarkan skor
     for(int i = 0; i < jumlahTugas - 1; i++){
@@ -52,6 +57,7 @@ void inputTugas(string namaTugas[], int deadline[], int kesulitan[], int kepenti
            }
        }
     }
+
 
 
 
