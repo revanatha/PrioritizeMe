@@ -46,7 +46,7 @@ void urutkanPrioritas(int skor[], int jumlahTugas, int urutan[]) {
     //isi urut awal = 0,1,2,...
 for (int i=0; i<jumlahTugas; i++) {
     urutan[i] = i;
-
+}
 // bubble sort indexs berdasarkan skor
     for(int i = 0; i < jumlahTugas - 1; i++){
         for(int j = 0; j < jumlahTugas - i - 1; j++){
@@ -57,6 +57,7 @@ for (int i=0; i<jumlahTugas; i++) {
            }
        }
     }
+}
 int main() {
 int jumlah Tugas;
 cout << "Masukkan jumlah tugas: ";
@@ -75,3 +76,4 @@ tampilkanTugas (namaTugas, deadline, kesulitan, kepentingan, dampak, skor, jumla
 
 return 0;
 }
+
