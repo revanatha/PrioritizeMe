@@ -57,11 +57,21 @@ for (int i=0; i<jumlahTugas; i++) {
            }
        }
     }
+int main() {
+int jumlah Tugas;
+cout << "Masukkan jumlah tugas: ";
+cin >> jumlahTugas;                                       // menginputkan jumlah tugas
+cin.ignore();                                            // bersihkan newline setelah angka
 
+string namaTugas [jumlahTugas];
+int deadline[jumlahTugas], kesulitan [jumlahTugas], kepentingan [jumlahTugas], dampak [jumlah Tugas], skor [jumlah Tugas];
+int urutan[jumlahTugas];                               // array indeks urut prioritas
 
+input Tugas (namaTugas, deadline, kesulitan, kepentingan, dampak, skor, jumlah Tugas);            //memanggil fungsi input Tugas
 
+urutkanPrioritas (skor, jumlahTugas, urutan);                                                     //memanggil fungsi urutkanPrioritas
 
+tampilkanTugas (namaTugas, deadline, kesulitan, kepentingan, dampak, skor, jumlahTugas, urutan);   //memanggil fungsi tampilkanTugas
 
-
-
-
+return 0;
+}
