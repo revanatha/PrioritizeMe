@@ -42,7 +42,7 @@ void inputTugas(string namaTugas[], int deadline[], int kesulitan[], int kepenti
 }
 
 // Fungsi menampilkan tugas
-void tampilkanTugas(string namaTugas[], int deadline[], int kesulitan[], int kepentingan[], int dampak[], int skor[], int jumlahTugas[], int urutan[]) {
+void tampilkanTugas(string namaTugas[], int deadline[], int kesulitan[], int kepentingan[], int dampak[], int skor[], int jumlahTugas, int urutan[]) {
     cout << "\n=== DAFTAR TUGAS ===\n";
     for (int i = 0; i < jumlahTugas; i++) {                                   //Loop menampilkan tugas satu persatu
         int index = urutan [i];                                               //Urutan[i] berisi indeks tugas diurutkan
@@ -91,6 +91,7 @@ tampilkanTugas (namaTugas, deadline, kesulitan, kepentingan, dampak, skor, jumla
 
 return 0;
 }
+
 
 
 
