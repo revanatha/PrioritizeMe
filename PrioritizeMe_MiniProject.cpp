@@ -74,7 +74,7 @@ void tampilkanTugas(string namaTugas[], int deadline[], int kesulitan[], int kep
 }
 
 int main() {
-    int jumlah Tugas;
+    int jumlahTugas;
     cout << "Masukkan jumlah tugas: ";
     cin >> jumlahTugas;                                       // menginputkan jumlah tugas
     cin.ignore();                                            // bersihkan newline setelah angka
@@ -91,6 +91,7 @@ int main() {
 
     return 0;
 }
+
 
 
 
