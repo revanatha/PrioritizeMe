@@ -79,11 +79,11 @@ int main() {
     cin >> jumlahTugas;                                       // menginputkan jumlah tugas
     cin.ignore();                                            // bersihkan newline setelah angka
 
-    string namaTugas [jumlahTugas];
-    int deadline[jumlahTugas], kesulitan[jumlahTugas], kepentingan[jumlahTugas], dampak[jumlah Tugas], skor[jumlah Tugas];
+    string namaTugas[jumlahTugas];
+    int deadline[jumlahTugas], kesulitan[jumlahTugas], kepentingan[jumlahTugas], dampak[jumlahTugas], skor[jumlahTugas];
     int urutan[jumlahTugas];                               // array indeks urut prioritas
 
-    inputTugas(namaTugas, deadline, kesulitan, kepentingan, dampak, skor, jumlah Tugas);            //memanggil fungsi input Tugas
+    inputTugas(namaTugas, deadline, kesulitan, kepentingan, dampak, skor, jumlahTugas);            //memanggil fungsi input Tugas
 
     urutkanPrioritas(skor, jumlahTugas, urutan);                                                     //memanggil fungsi urutkanPrioritas
 
@@ -91,6 +91,7 @@ int main() {
 
     return 0;
 }
+
 
 
 
