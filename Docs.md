@@ -20,6 +20,7 @@ Skor prioritas (`int`)
 ### 1.Deadline tugas
 Nilai yang menunjukkan seberapa dekat batas waktu. Nilai kecil berarti deadline sudah dekat.
 konsep kerjanya :
+
 • Kamu memberi angka 1 sampai 5.
 
 • Angka kecil berarti waktu semakin dekat.
@@ -31,6 +32,7 @@ konsep kerjanya :
 ### 2.Tingkat kesulitan
 Nilai yang menunjukkan seberapa sulit tugas diselesaikan.
 konsep kerja :
+
 • Kamu memberi nilai 1 sampai 5.
 
 • Nilai besar berarti tugas lebih sulit.
@@ -42,6 +44,7 @@ konsep kerja :
 ### 3.Tingkat kepentingan
 Nilai yang menunjukkan apakah tugas itu penting untuk diselesaikan.
 konsep kerja :
+
 • Kamu memberi nilai 1 sampai 5.
 
 • Nilai besar berarti tugas penting.
@@ -53,6 +56,7 @@ konsep kerja :
 ### 4.Dampak terhadap nilai atau prestasi
 Nilai yang menunjukkan pengaruh tugas terhadap nilai akademik.
 konsep kerja :
+
 • Kamu memberi nilai 1 sampai 5.
 
 • Nilai besar berarti tugas sangat berpengaruh ke performa akademik.
