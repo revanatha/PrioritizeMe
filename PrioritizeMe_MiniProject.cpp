@@ -80,17 +80,18 @@ int main() {
     cin.ignore();                                            // bersihkan newline setelah angka
 
     string namaTugas [jumlahTugas];
-    int deadline[jumlahTugas], kesulitan [jumlahTugas], kepentingan [jumlahTugas], dampak [jumlah Tugas], skor [jumlah Tugas];
+    int deadline[jumlahTugas], kesulitan[jumlahTugas], kepentingan[jumlahTugas], dampak[jumlah Tugas], skor[jumlah Tugas];
     int urutan[jumlahTugas];                               // array indeks urut prioritas
 
-    input Tugas (namaTugas, deadline, kesulitan, kepentingan, dampak, skor, jumlah Tugas);            //memanggil fungsi input Tugas
+    input Tugas(namaTugas, deadline, kesulitan, kepentingan, dampak, skor, jumlah Tugas);            //memanggil fungsi input Tugas
 
-    urutkanPrioritas (skor, jumlahTugas, urutan);                                                     //memanggil fungsi urutkanPrioritas
+    urutkanPrioritas(skor, jumlahTugas, urutan);                                                     //memanggil fungsi urutkanPrioritas
 
-    tampilkanTugas (namaTugas, deadline, kesulitan, kepentingan, dampak, skor, jumlahTugas, urutan);   //memanggil fungsi tampilkanTugas
+    tampilkanTugas(namaTugas, deadline, kesulitan, kepentingan, dampak, skor, jumlahTugas, urutan);   //memanggil fungsi tampilkanTugas
 
     return 0;
 }
+
 
 
 
