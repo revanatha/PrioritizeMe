@@ -40,21 +40,6 @@ void inputTugas(string namaTugas[], int deadline[], int kesulitan[], int kepenti
     }
 }
 
-// Fungsi menampilkan tugas
-void tampilkanTugas(string namaTugas[], int deadline[], int kesulitan[], int kepentingan[], int dampak[], int skor[], int jumlahTugas, int urutan[]) {
-    cout << "\n=== DAFTAR TUGAS ===\n";
-    for (int i = 0; i < jumlahTugas; i++) {                                   //Loop menampilkan tugas satu persatu
-        int index = urutan [i];                                               //Urutan[i] berisi indeks tugas diurutkan
-        cout << "\nTugas ke-" << i+1 << endl;
-        cout << "Nama          : " << namaTugas[index] << endl;               //Menampilkan nama tugas
-        cout << "Deadline      : " << deadline[index] << endl;                //Menampilkan skala deadline tugas
-        cout << "Kesulitan     : " << kesulitan[index] << endl;               //Menampilkan skala kesulitan tugas
-        cout << "Kepentigan    : " << kepentingan[index] << endl;             //Menampilkan skala kepentingan tugas
-        cout << "Pengaruh      : " << dampak[index] << endl;                  //Menampilkan skala dampak tugas
-        cout << "Skor prioritas: " << skor[index] << endl;                    //Menampilkan skor prioritas
-    }
-}
-
 //Fungsi untuk mengurutkan urutan prioritas (menghasilkan indeks urutan)
 void urutkanPrioritas(int skor[], int jumlahTugas, int urutan[]) {
     //isi urut awal = 0,1,2,...
@@ -72,7 +57,20 @@ void urutkanPrioritas(int skor[], int jumlahTugas, int urutan[]) {
        }
     }
 }
-
+// Fungsi menampilkan tugas
+void tampilkanTugas(string namaTugas[], int deadline[], int kesulitan[], int kepentingan[], int dampak[], int skor[], int jumlahTugas, int urutan[]) {
+    cout << "\n=== DAFTAR TUGAS ===\n";
+    for (int i = 0; i < jumlahTugas; i++) {                                   //Loop menampilkan tugas satu persatu
+        int index = urutan [i];                                               //Urutan[i] berisi indeks tugas diurutkan
+        cout << "\nTugas ke-" << i+1 << endl;
+        cout << "Nama          : " << namaTugas[index] << endl;               //Menampilkan nama tugas
+        cout << "Deadline      : " << deadline[index] << endl;                //Menampilkan skala deadline tugas
+        cout << "Kesulitan     : " << kesulitan[index] << endl;               //Menampilkan skala kesulitan tugas
+        cout << "Kepentigan    : " << kepentingan[index] << endl;             //Menampilkan skala kepentingan tugas
+        cout << "Pengaruh      : " << dampak[index] << endl;                  //Menampilkan skala dampak tugas
+        cout << "Skor prioritas: " << skor[index] << endl;                    //Menampilkan skor prioritas
+    }
+}
 int main() {
     int jumlah Tugas;
     cout << "Masukkan jumlah tugas: ";
