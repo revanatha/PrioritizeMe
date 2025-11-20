@@ -4,8 +4,7 @@
 PrioritizeMe adalah aplikasi konsol yang membantu kamu menentukan urutan prioritas tugas. Pengguna memasukkan tugas beserta empat nilai penilaian. Aplikasi menghitung skor dan menampilkan hasil urutan yang lebih terarah.
 
 Struktur Data
-ID tugas (`int`)
-Judul tugas (`String`)
+Nama tugas (`String`)
 Deadline tugas (`int`)
 Tingkat kesulitan (`int`)
 Tingkat kepentingan (`int`)
