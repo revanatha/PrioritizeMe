@@ -83,7 +83,7 @@ int main() {
     int deadline[jumlahTugas], kesulitan[jumlahTugas], kepentingan[jumlahTugas], dampak[jumlah Tugas], skor[jumlah Tugas];
     int urutan[jumlahTugas];                               // array indeks urut prioritas
 
-    input Tugas(namaTugas, deadline, kesulitan, kepentingan, dampak, skor, jumlah Tugas);            //memanggil fungsi input Tugas
+    inputTugas(namaTugas, deadline, kesulitan, kepentingan, dampak, skor, jumlah Tugas);            //memanggil fungsi input Tugas
 
     urutkanPrioritas(skor, jumlahTugas, urutan);                                                     //memanggil fungsi urutkanPrioritas
 
@@ -91,6 +91,7 @@ int main() {
 
     return 0;
 }
+
 
 
 
