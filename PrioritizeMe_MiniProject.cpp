@@ -1,5 +1,4 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
 //======================================================
@@ -26,15 +25,6 @@ void inputTugas(string namaTugas[], int deadline[], int kesulitan[], int kepenti
         cout << "Masukkan deadline (1-5, 1 = paling dekat): ";
         cin >> deadline[i];    //Input deadline, skala 1-5, 1 paling penting (prioritas)
         
-        if (deadline[i] < 1) {
-            cout << "Deadline terlalu kecil, diubah ke 1.\n";
-            deadline[i] = 1;
-        } 
-        else if (deadline[i] > 5) {
-            cout << "Deadline terlalu besar, diubah ke 5.\n";
-            deadline[i] = 5;
-        }
-
         cout << "Masukkan tingkat kesulitan (1-5): ";
         cin >> kesulitan[i];                                      //Input kesulitan dengan skala 1-5, 1 paling mudah          
 
@@ -101,6 +91,7 @@ int main() {
 
     return 0;
 }
+
 
 
 
