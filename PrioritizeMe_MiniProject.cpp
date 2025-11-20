@@ -5,10 +5,10 @@ using namespace std;
 // PrioritizMe
 // Program ini membantu kamu menetukan urutan prioritas.
 // Empat kriteria utama:
-// 1. Deadline
-// 2. Tingkat kesulitan
-// 3. Tingkat kepentingan
-// 4. Dampak terhadap nilai atau prestasi
+// 1. Deadline.
+// 2. Tingkat kesulitan.
+// 3. Tingkat kepentingan.
+// 4. Dampak terhadap nilai atau prestasi.
 // Program menghitung skor sederhana dari semua kriteria.
 // ======================================================
 
@@ -91,6 +91,7 @@ int main() {
 
     return 0;
 }
+
 
 
 
